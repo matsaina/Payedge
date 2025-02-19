@@ -1,6 +1,6 @@
 {
-  "name": "edgecloud/Payedge",
-  "description": "Payedge's payment sdk for stk payment initiation and query",
+  "name": "edgecloud/payedge",
+  "description": "payedge's payment sdk for stk payment initiation and query",
   "license": "MIT",
   "type" : "library",
   "require": {
@@ -8,7 +8,7 @@
   },
   "autoload": {
     "psr-4": {
-      "edgecloud\\Payedge\\": "src/"
+      "edgecloud\\payedge\\": "src/"
     }
   },
   "authors": [

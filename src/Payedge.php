@@ -1,11 +1,11 @@
 <?php
 
-namespace edgecloud\Payedge;
+namespace edgecloud\payedge;
 
-class Payedge
+class payedge
 {
-    protected ?string $api_url = "https://Payedge.com/api/v1/initiate";
-    protected ?string $query_url = "https://Payedge.com/api/v1/query";
+    protected ?string $api_url = "https://payedge.co.ke/api/v1/initiate";
+    protected ?string $query_url = "https://payedge.co.ke/api/v1/query";
 
     public function __construct(protected $api_key, protected $link_id)
     {

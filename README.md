@@ -1,23 +1,23 @@
-# Payedge PHP Library
+# payedge PHP Library
 
-This library provides a simple interface for interacting with the Payedge payment gateway in your PHP applications.
+This library provides a simple interface for interacting with the payedge payment gateway in your PHP applications.
 
 Installation
 Using Composer:
 
 ```
-composer require edgecloud/Payedge
+composer require edgecloud/payedge
 ```
 ## Usage
-Instantiate the Payedge class:
+Instantiate the payedge class:
 ```php
 require_once 'vendor/autoload.php';
 
-use edgecloud\Payedge\Payedge;
+use edgecloud\payedge\payedge;
 
 $apiKey = 'YOUR_API_KEY';
 $linkId = 'YOUR_LINK_ID';
-$Payedge = new Payedge($apiKey, $linkId);
+$payedge = new payedge($apiKey, $linkId);
 
 ```
 
@@ -28,7 +28,7 @@ $msisdn = '254712345678'; // Phone number without the leading '+'
 $amount = 10; // Amount in kes
 $callback = 'https://your-website.com/callback'; // Your callback URL
 
-$response = $Payedge->initiate($msisdn, $amount, $callback);
+$response = $payedge->initiate($msisdn, $amount, $callback);
 
 // Handle the response (usually a JSON object containing checkout details)
 
@@ -52,7 +52,7 @@ Query the status of a payment:
 
 $checkoutId = 'CHECKOUT_ID_FROM_INITIATE_RESPONSE';
 
-$response = $Payedge->query($checkoutId);
+$response = $payedge->query($checkoutId);
 
 // Handle the response (usually a JSON object containing payment status)
 
